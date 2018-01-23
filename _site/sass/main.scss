@@ -99,15 +99,15 @@ __   ____ _ _ __(_) __ _| |__ | | ___  ___
 
 
 
-$font-stack: "Roboto","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-stack: "Muli","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $primary-dark: #222;
 $primary-light: #fff;
 $mid-tone: #666;
 $mid-light: #ddd;
-$highlight: orange;
-$base-size: 16px;
+$highlight: blue;
+$base-size: 18px;
 $reader-size: 1.25em;
-$header-height: 2.5em;
+$header-height: 0em;
 
 $mobile-break: 30em;
 $tablet-break: 48em;
@@ -165,6 +165,7 @@ a {
 
 a:hover {
   background: $highlight;
+  color: $primary-light;
 }
 
 .link-on-dark {
@@ -198,8 +199,9 @@ a:hover {
 
 
 .reader {
-  max-width: 650px;
+  max-width: 600px;
   margin: 0px auto;
+  font-size: $reader-size;
 }
 
 .title {
