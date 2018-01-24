@@ -12,4 +12,4 @@ I am passionate about helping organizations maximize their impact through strong
 
 [Resume [pdf]](https://www.dropbox.com/s/jnfh4extug1fh7u/Moussavi.Resume.pdf?dl=1)
 
-sheilamoussavi \<at\> gmail \<dot\> com
+<span class="contact-email">sheilamoussavi \<at\> gmail \<dot\> com</span>
