@@ -99,13 +99,13 @@ __   ____ _ _ __(_) __ _| |__ | | ___  ___
 
 
 
-$font-stack: "Muli","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-stack: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $primary-dark: #222;
 $primary-light: #fff;
 $mid-tone: #666;
 $mid-light: #ddd;
-$highlight: blue;
-$base-size: 18px;
+$highlight: #22b573;
+$base-size: 20px;
 $reader-size: 1.25em;
 $header-height: 0em;
 
@@ -130,7 +130,6 @@ $desktop-break: 81.25em;
 @import 'menu';
 @import 'mp';
 @import 'positioners';
-@import 'queries';
 @import 'text';
 @import 'zs';
 
@@ -145,27 +144,29 @@ html, body {
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
 	font-family: $font-stack;
+  font-size: $base-size;
 }
 
 ::selection {
-  background: $highlight;
-  color: $primary-light;
+  background: $primary-light;
+  color: $highlight;
 }
 ::-moz-selection {
-  background: $highlight;
-  color: $primary-light;
+  background: $primary-light;
+  color: $highlight;
 }
 
 body{
-	color: $primary-dark;
+	color: $primary-light;
+  background: $highlight;
 }
 a {
-  color: $primary-dark;
+  color: $primary-light;
 }
 
 a:hover {
-  background: $highlight;
-  color: $primary-light;
+  background: $primary-light;
+  color: $highlight;
 }
 
 .link-on-dark {
@@ -200,7 +201,7 @@ a:hover {
 
 .reader {
   max-width: 600px;
-  margin: 0px auto;
+  padding-right: 1em;
   font-size: $reader-size;
 }
 
@@ -209,18 +210,35 @@ a:hover {
 }
 
 .content {
-  padding: 0 1.5em;
+  padding: 3em 2em 0 1em;
 
   .contact-email {
     font-size: .8em;
+
+  }
+
+  .reader {
+    
   }
 }
 
 
 .brand-title {
+
+  img {
+    max-width: 150px;
+    margin-top: -20px;
+  }
 	
   a {
-    text-decoration: none
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      background-color: transparent;
+    }
   }
 }
+
+@import 'queries';
 

@@ -1,15 +1,12 @@
 ---
 layout: home
-title: Sheila Moussavi
+title: Irish American Left
 ---
 
-# Sheila Moussavi
 
-I am passionate about helping organizations maximize their impact through strong teams, policies, and practices. I have a track record of leading complex projects with diverse stakeholders, communicating effectively across levels, and designing and implementing innovative solutions to address organizational barriers. I value relationships, continual learning, and cultural humility.
+The Irish American Left is a grassroots social welfare organization. We promote liberty, equality, solidarity, and justice among Americans of Irish descent.
 
+We're just getting started. If you want to be involved, reach out on FB and we'll help you take charge!
 
-&nbsp;
-
-[Resume [pdf]](https://www.dropbox.com/s/jnfh4extug1fh7u/Moussavi.Resume.pdf?dl=1)
-
-<span class="contact-email">sheilamoussavi \<at\> gmail \<dot\> com</span>
+<a href="http://www.facebook.com/theirishleft" target="_blank">fb: @theirishleft</a><br />
+<a href="http://www.instagram.com/theirishleft" target="_blank">ig: @theirishleft</a>

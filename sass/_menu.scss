@@ -25,15 +25,16 @@
 }
 
 .pure-menu a, .pure-menu .pure-menu-can-have-children>li:after {
-  color: $primary-dark;
+  color: $primary-light;
 }
 
-.pure-menu li a {
-  padding: 5px 0px;
+.pure-menu li {
+  padding: 5px 0;
+  margin: 0 0 5px 0;
 }
 
 .pure-menu li a:hover, .pure-menu li a:focus {
-  color: $primary-dark;
-  background: $highlight;
+  color: $highlight;
+  background: $primary-light;
 }
 

@@ -241,7 +241,7 @@ __   ____ _ _ __(_) __ _| |__ | | ___  ___
 
 /* line 56, ../sass/_dark.scss */
 .brand-title.dark {
-  background: blue;
+  background: #22b573;
 }
 
 /* line 6, ../sass/_debug.scss */
@@ -289,18 +289,19 @@ __   ____ _ _ __(_) __ _| |__ | | ___  ___
 
 /* line 27, ../sass/_menu.scss */
 .pure-menu a, .pure-menu .pure-menu-can-have-children > li:after {
-  color: #222;
+  color: #fff;
 }
 
 /* line 31, ../sass/_menu.scss */
-.pure-menu li a {
-  padding: 5px 0px;
+.pure-menu li {
+  padding: 5px 0;
+  margin: 0 0 5px 0;
 }
 
-/* line 35, ../sass/_menu.scss */
+/* line 36, ../sass/_menu.scss */
 .pure-menu li a:hover, .pure-menu li a:focus {
-  color: #222;
-  background: blue;
+  color: #22b573;
+  background: #fff;
 }
 
 /* line 2, ../sass/_mp.scss */
@@ -530,27 +531,6 @@ __   ____ _ _ __(_) __ _| |__ | | ___  ___
   margin: 0px auto;
 }
 
-@media screen and (min-width: 48em) {
-  /* line 4, ../sass/_queries.scss */
-  .nav-menu {
-    background: transparent;
-  }
-
-  /* line 9, ../sass/_queries.scss */
-  .md-pull-down {
-    bottom: 0;
-  }
-
-  /* line 14, ../sass/_queries.scss */
-  .header {
-    position: fixed;
-  }
-
-  /* line 18, ../sass/_queries.scss */
-  .content {
-    padding-top: 2em;
-  }
-}
 /* line 1, ../sass/_text.scss */
 .text-centered {
   text-align: center;
@@ -597,58 +577,60 @@ __   ____ _ _ __(_) __ _| |__ | | ___  ___
   z-index: -99997;
 }
 
-/* line 139, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 145, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 html, button, input, select, textarea,
 .pure-g [class*="pure-u"] {
-  font-family: "Muli", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 20px;
 }
 
 /* line 150, ../sass/main.scss */
 ::selection {
-  background: blue;
-  color: #fff;
+  background: #fff;
+  color: #22b573;
 }
 
 /* line 154, ../sass/main.scss */
 ::-moz-selection {
-  background: blue;
-  color: #fff;
+  background: #fff;
+  color: #22b573;
 }
 
 /* line 159, ../sass/main.scss */
 body {
-  color: #222;
+  color: #fff;
+  background: #22b573;
 }
 
-/* line 162, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 a {
-  color: #222;
-}
-
-/* line 166, ../sass/main.scss */
-a:hover {
-  background: blue;
   color: #fff;
 }
 
-/* line 171, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
+a:hover {
+  background: #fff;
+  color: #22b573;
+}
+
+/* line 172, ../sass/main.scss */
 .link-on-dark {
   color: #fff;
 }
 
-/* line 175, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .link-no-decor {
   text-decoration: none;
 }
 
-/* line 180, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 .pure-g > div {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -656,44 +638,71 @@ a:hover {
   box-sizing: border-box;
 }
 
-/* line 187, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 .layout {
   min-height: 100%;
   position: relative;
 }
 
-/* line 192, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .header-bar {
   height: 0em;
 }
 
-/* line 196, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 .wrapper {
   padding-top: 0em;
 }
 
-/* line 201, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 .reader {
   max-width: 600px;
-  margin: 0px auto;
+  padding-right: 1em;
   font-size: 1.25em;
 }
 
-/* line 207, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 .title {
   text-decoration: none;
 }
 
-/* line 211, ../sass/main.scss */
+/* line 212, ../sass/main.scss */
 .content {
-  padding: 0 1.5em;
+  padding: 3em 2em 0 1em;
 }
-/* line 214, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 .content .contact-email {
   font-size: .8em;
 }
 
-/* line 222, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
+.brand-title img {
+  max-width: 150px;
+  margin-top: -20px;
+}
+/* line 233, ../sass/main.scss */
 .brand-title a {
   text-decoration: none;
+}
+/* line 236, ../sass/main.scss */
+.brand-title a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 48em) {
+  /* line 4, ../sass/_queries.scss */
+  .nav-menu {
+    background: transparent;
+  }
+
+  /* line 9, ../sass/_queries.scss */
+  .md-pull-down {
+    bottom: 0;
+  }
+
+  /* line 13, ../sass/_queries.scss */
+  .content {
+    padding-top: 0em;
+  }
 }
